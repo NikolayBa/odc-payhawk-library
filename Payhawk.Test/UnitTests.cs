@@ -36,6 +36,8 @@ public class Tests
         };
 
         var result = _actions.VerifySignature(request);
+
+        Assert.That(result.Valid, Is.True);
     }
     
 }
